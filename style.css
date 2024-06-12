@@ -6,6 +6,9 @@
    margin: 0;
    padding: 0;
 }
+img , video, svg{
+   user-select: none;
+}
 BODY,
 html {
    background-color: #000000;
