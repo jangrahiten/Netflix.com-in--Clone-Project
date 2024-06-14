@@ -6,7 +6,9 @@
    margin: 0;
    padding: 0;
 }
-img , video, svg{
+img,
+video,
+svg {
    user-select: none;
 }
 BODY,
@@ -25,16 +27,16 @@ html {
 }
 
 .main .box {
-   height: 80vh;
+   height: 70vh;
    width: 100%;
    background-color: black;
-   opacity: 0.62;
+   opacity: 0.72;
    position: absolute;
    top: 0;
 }
 nav img {
-   height: 6.5rem;
-   width: 11.5rem;
+   /* height: 6.5rem; */
+   width: 9.5rem;
    position: sticky;
 }
 nav {
@@ -237,7 +239,7 @@ nav {
    flex-direction: column;
    font-size: 3rem;
    font-weight: 900;
-   margin-top: 6vh;
+   margin: 6vh 0px;
    gap: 1vh;
 }
 .faq .box {
@@ -263,5 +265,35 @@ nav {
 .faq .box:hover {
    background-color: rgb(75, 75, 75);
    /* transition: ease-in-out; */
+}
 
+.footer {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   justify-content: space-between;
+}
+footer {
+   font-family: var(--def-font);
+   font-weight: 400;
+   display: flex;
+   flex-direction: column;
+   max-width: 76vw;
+   margin: 4.5rem auto;
+   height: 30vh;
+   gap: 3vh;
+
+}
+.footer-item {
+   gap: 2vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-item a:visited,
+a {
+   color: #B3B3B3;
+}
+footer .questions {
+   color: #b3b3b3;
+   /* padding: 34px 0; */
 }
